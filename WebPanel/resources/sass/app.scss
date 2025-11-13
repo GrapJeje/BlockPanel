@@ -1,0 +1,22 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+$primary: #FBFBFB;
+
+:root {
+    --background-color: #fff;
+
+    --primary-100: #{$primary};
+
+    --primary-text-color: #000;
+    --primary-font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+}
