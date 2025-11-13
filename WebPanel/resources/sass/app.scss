@@ -37,3 +37,19 @@ $primary-500: #1c2a3b;
 body {
     background-color: var(--background-300);
 }
+
+.component {
+    box-sizing: border-box;
+    background-color: var(--background-200);
+    border-radius: 8px;
+    padding: 16px 24px;
+    margin: 12px;
+    font-family: var(--primary-font-family);
+    color: #ffffff;
+    width: fit-content;
+    max-width: 100%;
+
+    p {
+        text-align: center;
+    }
+}
