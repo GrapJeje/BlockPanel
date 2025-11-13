@@ -55,6 +55,7 @@
         &:hover {
             background-color: var(--background-300);
             cursor: pointer;
+            user-select: none;
 
             p {
                 color: var(--primary-100);
