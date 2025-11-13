@@ -2,7 +2,7 @@
 
 use function Livewire\Volt\{state};
 
-state(['code']);
+state(['code', 'page']);
 
 ?>
 
@@ -11,7 +11,7 @@ state(['code']);
 
     <div class="header">
 
-        <a href="" class="header__logo">
+        <a href="{{ route('server.index', ['code' => $code]) }}" class="header__logo">
             <img src="{{ asset('img/logo.png') }}" alt="BlockPanel Logo">
             <p>BlockPanel</p>
         </a>
@@ -20,6 +20,21 @@ state(['code']);
             <p> {{ $code }} </p>
         </div>
     </div>
+
+    <nav class="nav">
+        <x-datacontainer>
+            <a href="{{ route('server.index', ['code' => $code]) }}" class="nav__item">
+                <img src="{{ asset('img/navigation/home.png') }}" alt="Home">
+                <p @if($page == "home") class="active" @endif >Home</p>
+            </a>
+        </x-datacontainer>
+        <x-datacontainer>
+            <a href="{{ route('server.players', ['code' => $code]) }}" class="nav__item">
+                <img src="{{ asset('img/navigation/players.png') }}" alt="Players">
+                <p @if($page == "players") class="active" @endif >Players</p>
+            </a>
+        </x-datacontainer>
+    </nav>
 
     <script>
         function copyCode(code) {

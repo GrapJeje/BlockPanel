@@ -10,7 +10,7 @@ state(['code']);
 <div>
     @vite('resources/sass/pages/server.scss')
     @section('title', $code)
-    <livewire:components.header :code="$code"/>
+    <livewire:components.header :code="$code" :page="'home'"/>
 
     <div class="dashboard__server-settings">
         <x-datacontainer>
