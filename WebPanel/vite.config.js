@@ -7,7 +7,8 @@ export default defineConfig({
         laravel({
             input: ['resources/js/app.js',
             'resources/sass/app.scss',
-            'resources/sass/components/header.scss'],
+            'resources/sass/components/header.scss',
+            'resources/sass/components/server.scss'],
             refresh: true,
         }),
         tailwindcss(),
