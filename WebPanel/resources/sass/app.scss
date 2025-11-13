@@ -6,17 +6,34 @@
     margin: 0;
 }
 
-$primary: #FBFBFB;
+$background-100: #2d3639;
+$background-200: #283033;
+$background-300: #232a2d;
+$background-400: #1f2427;
+$background-500: #181d1f;
+
+$primary-100: #4a90e2;
+$primary-200: #357abd;
+$primary-300: #2d5f8c;
+$primary-400: #244563;
+$primary-500: #1c2a3b;
 
 :root {
-    --background-color: #fff;
+    --background-100: #{$background-100};
+    --background-200: #{$background-200};
+    --background-300: #{$background-300};
+    --background-400: #{$background-400};
+    --background-500: #{$background-500};
 
-    --primary-100: #{$primary};
+    --primary-100: #{$primary-100};
+    --primary-200: #{$primary-200};
+    --primary-300: #{$primary-300};
+    --primary-400: #{$primary-400};
+    --primary-500: #{$primary-500};
 
-    --primary-text-color: #000;
     --primary-font-family: 'Inter', sans-serif;
 }
 
 body {
-    background-color: var(--background-color);
+    background-color: var(--background-300);
 }

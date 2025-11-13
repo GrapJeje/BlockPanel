@@ -1,0 +1,72 @@
+.header {
+    background-color: var(--background-500);
+    width: 100vw;
+    height: 6.5vh;
+
+    display: flex;
+    align-items: center;
+    padding: 0 1.5rem;
+    box-sizing: border-box;
+
+    justify-content: space-between;
+
+    &__logo {
+        display: inline-flex;
+        align-items: center;
+        text-decoration: none;
+        background-color: var(--background-200);
+        height: 70%;
+        border-radius: 3px;
+        padding: 0.3rem 1rem;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: var(--background-300);
+
+            p {
+                color: var(--primary-100);
+            }
+        }
+
+        p {
+            color: var(--primary-200);
+            font-family: var(--primary-font-family);
+            font-weight: 600;
+            margin: 0;
+            transition: color 0.3s ease;
+        }
+
+        img {
+            height: 1.8rem;
+            margin-right: 10px;
+            display: block;
+        }
+    }
+
+    &__code {
+        display: inline-flex;
+        align-items: center;
+        background-color: var(--background-200);
+        height: 70%;
+        border-radius: 3px;
+        padding: 0.3rem 1rem;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: var(--background-300);
+            cursor: pointer;
+
+            p {
+                color: var(--primary-100);
+            }
+        }
+
+        p {
+            color: var(--primary-200);
+            font-family: var(--primary-font-family);
+            font-weight: 600;
+            margin: 0;
+            transition: color 0.3s ease;
+        }
+    }
+}
