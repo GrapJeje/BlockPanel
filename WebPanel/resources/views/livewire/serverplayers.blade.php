@@ -51,7 +51,7 @@ mount(function () {
 
                 <tbody>
                 @foreach($players as $player)
-                    <tr onclick="window.location='{{ route('player.show', ['code' => $code, 'uuid' => $player['uuid']]) }}'">
+                    <tr onclick="window.location='{{ route('player.show', ['code' => $code, 'uuid' => $player['uuid']]) }}'" title="Player details">
                         <td>{{ $player['name'] }}</td>
                         <td>{{ $player['uuid'] }}</td>
                         <td>
