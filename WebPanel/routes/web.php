@@ -10,4 +10,6 @@ Route::prefix('/{code}')
         ->name('server.index');
         Volt::route('/players', 'serverplayers')
         ->name('server.players');
+        Volt::route('/player/{uuid}', 'serverplayers')
+            ->name('player.show');
     });
