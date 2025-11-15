@@ -8,8 +8,8 @@ Route::prefix('/{code}')
     ->group(function () {
         Volt::route('/', 'server')
         ->name('server.index');
-        Volt::route('/players', 'serverplayers')
+        Volt::route('/players', 'server-players')
         ->name('server.players');
-        Volt::route('/player/{uuid}', 'serverplayers')
+        Volt::route('/player/{uuid}', 'server-player')
             ->name('player.show');
     });

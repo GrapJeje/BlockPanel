@@ -42,6 +42,7 @@ $primary-500: #1c2a3b;
 
 body {
     background-color: var(--background-300);
+    overflow-x: hidden;
 }
 
 .component {

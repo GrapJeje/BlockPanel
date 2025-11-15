@@ -1,0 +1,112 @@
+.player {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    width: 100%;
+    align-items: center;
+    padding-bottom: 40px;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        align-items: center;
+    }
+
+    &__header {
+        width: 90vw;
+        background: rgba(255, 255, 255, 0.06);
+        padding: 22px 26px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        gap: 22px;
+        backdrop-filter: blur(6px);
+
+        img {
+            width: 80px;
+            height: 80px;
+            border-radius: 10px;
+            border: 2px solid rgba(255, 255, 255, 0.15);
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            margin: 0;
+            letter-spacing: -0.5px;
+            font-weight: 700;
+        }
+
+        .uuid {
+            color: rgba(255, 255, 255, 0.55);
+            font-size: 0.9rem;
+            margin-top: 6px;
+        }
+    }
+
+    &__section-title {
+        width: 90vw;
+        font-size: 1.35rem;
+        font-weight: 700;
+        margin-top: 10px;
+        margin-bottom: -6px;
+        letter-spacing: 0.6px;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.9);
+    }
+
+    &__table {
+        width: 90vw;
+        border-collapse: collapse;
+        font-size: 1rem;
+        table-layout: fixed;
+        background: rgba(255, 255, 255, 0.04);
+        border-radius: 12px;
+        overflow: hidden;
+        backdrop-filter: blur(4px);
+    }
+
+    th, td {
+        padding: 14px 18px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+        vertical-align: top;
+        color: rgba(255, 255, 255, 0.92);
+    }
+
+    th {
+        width: 230px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        color: rgba(255, 255, 255, 0.75);
+        background: rgba(255, 255, 255, 0.03);
+    }
+
+    thead tr {
+        background: rgba(255, 255, 255, 0.06);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    thead th {
+        font-size: 0.95rem;
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    .status-dot {
+        display: inline-block;
+        width: 11px;
+        height: 11px;
+        border-radius: 50%;
+        margin-right: 6px;
+
+        &.online {
+            background: #38c172;
+            box-shadow: 0 0 6px rgba(56, 193, 114, 0.7);
+        }
+
+        &.offline {
+            background: #e3342f;
+            box-shadow: 0 0 6px rgba(227, 52, 47, 0.7);
+        }
+    }
+}
