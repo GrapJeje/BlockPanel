@@ -110,3 +110,43 @@
         }
     }
 }
+
+.back-btn {
+    width: calc(90vw + 16px + 26px);
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+
+    a {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 10px 16px;
+        color: rgba(255, 255, 255, 0.85);
+        text-decoration: none;
+        font-family: var(--primary-font-family);
+        font-weight: 500;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.06);
+        transition: all 0.2s ease;
+        backdrop-filter: blur(4px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        font-size: 0.95rem;
+
+        &:hover {
+            background: rgba(255, 255, 255, 0.12);
+            border-color: rgba(255, 255, 255, 0.2);
+            color: rgba(255, 255, 255, 0.95);
+            transform: translateX(-2px);
+        }
+
+        svg {
+            transition: transform 0.2s ease;
+        }
+
+        &:hover svg {
+            transform: translateX(-3px);
+        }
+    }
+}
+
